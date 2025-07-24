@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/e59a5119f90fbd6e9f1333a0/w/d0af061ee81795a88f344743/e/f501fa2de0bf2f30bcb1f673 -->
+<sdf version="1.7">
+  <model name="warehouse">
+    <!-- Link part_20 -->
+    <link name="part_20">
+      <inertial>
+        <pose>-8.00112 -4.5 1.55045 0 0 0</pose>
+        <mass>262248</mass>
+        <inertia>
+          <ixx>4.30425e+06</ixx>
+          <ixy>2.31943e-08</ixy>
+          <ixz>-105193</ixz>
+          <iyy>8.20251e+06</iyy>
+          <iyz>5.40949e-10</iyz>
+          <izz>1.21147e+07</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part part_20 -->
+      <visual name="part_20_visual_mesh_1">
+        <pose relative_to="part_20">-7.5 -4.5 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://warehouse/assets/part_20.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.768627 0.886275 0.952941 1</ambient>
+          <diffuse>0.768627 0.886275 0.952941 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="part_20_collision_mesh_2">
+        <pose relative_to="part_20">-7.5 -4.5 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://warehouse/assets/part_20.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<sdf version="1.7">
+  <world name="warehouse_world">
+
+    <!-- Bookshelf -->
+    <include>
+      <uri>model://bookshelf</uri>
+      <name>bookshelf</name>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Cardboard Box Blue Series -->
+    <include>
+      <uri>model://cardboard_box_blue_0</uri>
+      <name>cardboard_box_blue_0</name>
+      <pose>1 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_1</uri>
+      <name>cardboard_box_blue_1</name>
+      <pose>2 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_2</uri>
+      <name>cardboard_box_blue_2</name>
+      <pose>3 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_3</uri>
+      <name>cardboard_box_blue_3</name>
+      <pose>4 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_4</uri>
+      <name>cardboard_box_blue_4</name>
+      <pose>5 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_5</uri>
+      <name>cardboard_box_blue_5</name>
+      <pose>6 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_6</uri>
+      <name>cardboard_box_blue_6</name>
+      <pose>7 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_7</uri>
+      <name>cardboard_box_blue_7</name>
+      <pose>8 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_8</uri>
+      <name>cardboard_box_blue_8</name>
+      <pose>9 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_9</uri>
+      <name>cardboard_box_blue_9</name>
+      <pose>10 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_10</uri>
+      <name>cardboard_box_blue_10</name>
+      <pose>11 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_11</uri>
+      <name>cardboard_box_blue_11</name>
+      <pose>12 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_12</uri>
+      <name>cardboard_box_blue_12</name>
+      <pose>13 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_13</uri>
+      <name>cardboard_box_blue_13</name>
+      <pose>14 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_14</uri>
+      <name>cardboard_box_blue_14</name>
+      <pose>15 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_15</uri>
+      <name>cardboard_box_blue_15</name>
+      <pose>16 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_16</uri>
+      <name>cardboard_box_blue_16</name>
+      <pose>17 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_17</uri>
+      <name>cardboard_box_blue_17</name>
+      <pose>18 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_18</uri>
+      <name>cardboard_box_blue_18</name>
+      <pose>19 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://cardboard_box_blue_19</uri>
+      <name>cardboard_box_blue_19</name>
+      <pose>20 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Repeat in similar fashion for cardboard_box_green_0 ... cardboard_box_green_19, cardboard_box_red_0 ... etc. -->
+    <!-- Green Boxes -->
+    <include>
+      <uri>model://cardboard_box_green_0</uri>
+      <name>cardboard_box_green_0</name>
+      <pose>0 1 0 0 0 0</pose>
+    </include>
+    <!-- (add all green, red, yellow, etc. using stepwise pose offsets for clarity) -->
+
+    <!-- Casual Female -->
+    <include>
+      <uri>model://Casual female</uri>
+      <name>Casual_female</name>
+      <pose>0 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Male Visitor On Phone -->
+    <include>
+      <uri>model://MaleVisitorOnPhone</uri>
+      <name>MaleVisitorOnPhone</name>
+      <pose>1 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Monitor and Keyboard -->
+    <include>
+      <uri>model://MonitorAndKeyboard</uri>
+      <name>MonitorAndKeyboard</name>
+      <pose>2 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Pallet Box Mobile -->
+    <include>
+      <uri>model://pallet_box_mobile</uri>
+      <name>pallet_box_mobile</name>
+      <pose>3 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Storage Rack -->
+    <include>
+      <uri>model://StorageRack</uri>
+      <name>StorageRack</name>
+      <pose>4 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Table and Table (1) -->
+    <include>
+      <uri>model://Table</uri>
+      <name>Table</name>
+      <pose>5 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://Table (1)</uri>
+      <name>Table_1</name>
+      <pose>6 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Trash Bin -->
+    <include>
+      <uri>model://TrashBin</uri>
+      <name>TrashBin</name>
+      <pose>7 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Trolley Box 1 & 2 -->
+    <include>
+      <uri>model://TrolleyBox1</uri>
+      <name>TrolleyBox1</name>
+      <pose>8 2 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://TrolleyBox2</uri>
+      <name>TrolleyBox2</name>
+      <pose>9 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Utility Cart -->
+    <include>
+      <uri>model://utility_cart</uri>
+      <name>utility_cart</name>
+      <pose>10 2 0 0 0 0</pose>
+    </include>
+
+    <!-- Warehouse -->
+    <include>
+      <uri>model://warehouse</uri>
+      <name>warehouse</name>
+      <pose>0 3 0 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
