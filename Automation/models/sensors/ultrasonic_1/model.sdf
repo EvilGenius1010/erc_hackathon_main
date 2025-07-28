@@ -1,0 +1,28 @@
+<!-- <?xml version='1.0'?>
+<sdf version='1.7'>
+    <model name='ultrasonic_1'>
+    <sensor name="my_ultrasonic" type="ray">
+  <ray>
+    <scan>
+      <horizontal>
+        <samples>10</samples>
+        <resolution>1</resolution>
+        <min_angle>-0.1745</min_angle>  <!-- -10 deg -->
+        <max_angle>0.1745</max_angle>   <!-- 10 deg -->
+      </horizontal>
+    </scan>
+    <range>
+      <min>0.02</min>
+      <max>4.0</max>
+      <resolution>0.01</resolution>
+    </range>
+  </ray>
+  <plugin name="sonar_controller" filename="libgazebo_ros_range.so">
+    <topicName>ultrasonic</topicName>
+    <frameName>ultrasonic_link</frameName>
+    <radiation>ultrasound</radiation>
+    <field_of_view>0.35</field_of_view> <!-- 20 deg -->
+  </plugin>
+</sensor>
+    </model>
+</sdf> -->
