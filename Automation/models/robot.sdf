@@ -1,0 +1,510 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/f21e4e7fa37d441c582a939b/w/88593c83c7507020b659a8e4/e/9b3ba83a22e3af9be643551f -->
+<sdf version="1.7">
+  <model name="forklift">
+    <plugin filename="ignition-gazebo-velocity-control-system"
+        name="ignition::gazebo::systems::VelocityControl">
+        <topic>model/forklift/cmd_vel</topic>
+      </plugin>
+      
+    <frame name="lidar_frame" attached_to='body'>
+      <pose>0.8 0 0.5 0 0 0</pose>
+    </frame>
+    <!-- Link body -->
+    <link name="body">
+      <inertial>
+        <pose>0.108872 -1.9711e-07 0.248955 0 0 0</pose>
+        <mass>5000</mass>
+        <inertia>
+          <ixx>743.717</ixx>
+          <ixy>7.94891e-06</ixy>
+          <ixz>-149.673</ixz>
+          <iyy>759.431</iyy>
+          <iyz>0.00072338</iyz>
+          <izz>282.509</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+
+    <sensor name='gpu_lidar' type='gpu_lidar'>"
+    <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
+    <topic>lidar</topic>
+    <update_rate>10</update_rate>
+    <ray>
+        <scan>
+            <horizontal>
+                <samples>640</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.396263</min_angle>
+                <max_angle>1.396263</max_angle>
+            </horizontal>
+            <vertical>
+                <samples>1</samples>
+                <resolution>0.01</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+            </vertical>
+        </scan>
+        <range>
+            <min>0.08</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+        </range>
+    </ray>
+    <always_on>1</always_on>
+    <visualize>true</visualize>
+    </sensor>
+
+      <!-- Part body -->
+      <visual name="body_visual_mesh_1">
+        <pose relative_to="body">-0.00799562 -3.71942e-17 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/body1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="body_collision_mesh_2">
+        <pose relative_to="body">-0.00799562 -3.71942e-17 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/body1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    
+    
+
+    <!-- NavSatSensor Link (GPS) -->
+    <link name="gps_link">
+      <pose>0 0 1.2 0 0 0</pose>
+      <inertial>
+        <mass>0.01</mass>
+        <inertia>
+          <ixx>0.00001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00001</iyy>
+          <iyz>0</iyz>
+          <izz>0.00001</izz>
+        </inertia>
+      </inertial>
+      <sensor name="navsat_sensor" type="navsat">
+        <pose>0 0 0 0 0 0</pose>
+        <always_on>1</always_on>
+        <update_rate>1</update_rate>
+        <visualize>false</visualize>
+        <topic>forklift_pos</topic>
+        <navsat>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.00001</stddev>
+          </noise>
+        </navsat>
+      </sensor>
+    </link>
+    
+    <joint name="gps_joint" type="fixed">
+      <parent>body</parent>
+      <child>gps_link</child>
+      <pose>0 0 0 0 0 0</pose>
+    </joint>
+
+    <link name="camera_link">
+      <sensor name="camera" type="camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>camera</topic>
+        </sensor>
+      </link>    
+
+    <!-- Joint from body to camera -->
+    <joint name="camera_joint" type="fixed">
+      <pose relative_to="fork">0.0 0.0 0.4 0 0 0</pose>
+      <parent>fork</parent>
+      <child>camera_link</child>
+    </joint>
+
+    <!-- Link wheel -->
+    <link name="wheel">
+      <inertial>
+        <pose>-2.21045e-15 -2.33218e-16 -0.0703848 0 0 0</pose>
+        <mass>0.816749</mass>
+        <inertia>
+          <ixx>0.0011595</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0011595</iyy>
+          <iyz>0</iyz>
+          <izz>0.00147113</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="leftFrontWheel">0 0 0 0 -0 0</pose>
+      <!-- Part wheel -->
+      <visual name="wheel_visual_mesh_1">
+        <pose relative_to="wheel">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.647059 0.647059 0.647059 1</ambient>
+          <diffuse>0.647059 0.647059 0.647059 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="wheel_collision_mesh_2">
+        <pose relative_to="wheel">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint from body to wheel -->
+    <joint name="leftFrontWheel" type="revolute">
+      <pose relative_to="body">0.192004 0.25 0.05 1.5708 -0 0</pose>
+      <parent>body</parent>
+      <child>wheel</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Link wheel_2 -->
+    <link name="wheel_2">
+      <inertial>
+        <pose>-2.21045e-15 -2.33218e-16 -0.0703848 0 0 0</pose>
+        <mass>0.816749</mass>
+        <inertia>
+          <ixx>0.0011595</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0011595</iyy>
+          <iyz>0</iyz>
+          <izz>0.00147113</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="leftBackWheel">0 0 0 0 -0 0</pose>
+      <!-- Part wheel_2 -->
+      <visual name="wheel_2_visual_mesh_1">
+        <pose relative_to="wheel_2">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.647059 0.647059 0.647059 1</ambient>
+          <diffuse>0.647059 0.647059 0.647059 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="wheel_2_collision_mesh_2">
+        <pose relative_to="wheel_2">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint from body to wheel_2 -->
+    <joint name="leftBackWheel" type="revolute">
+      <pose relative_to="body">-0.207996 0.25 0.05 1.5708 -0 0</pose>
+      <parent>body</parent>
+      <child>wheel_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Link wheel_3 -->
+    <link name="wheel_3">
+      <inertial>
+        <pose>-2.21045e-15 -2.33218e-16 -0.0703848 0 0 0</pose>
+        <mass>0.816749</mass>
+        <inertia>
+          <ixx>0.0011595</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0011595</iyy>
+          <iyz>0</iyz>
+          <izz>0.00147113</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="rightFrontWheel">0 0 0 0 -0 0</pose>
+      <!-- Part wheel_3 -->
+      <visual name="wheel_3_visual_mesh_1">
+        <pose relative_to="wheel_3">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.647059 0.647059 0.647059 1</ambient>
+          <diffuse>0.647059 0.647059 0.647059 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="wheel_3_collision_mesh_2">
+        <pose relative_to="wheel_3">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint from body to wheel_3 -->
+    <joint name="rightFrontWheel" type="revolute">
+      <pose relative_to="body">0.192004 -0.25 0.05 -1.5708 -0 0</pose>
+      <parent>body</parent>
+      <child>wheel_3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Link wheel_4 -->
+    <link name="wheel_4">
+      <inertial>
+        <pose>-2.21045e-15 -2.33218e-16 -0.0703848 0 0 0</pose>
+        <mass>0.816749</mass>
+        <inertia>
+          <ixx>0.0011595</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0011595</iyy>
+          <iyz>0</iyz>
+          <izz>0.00147113</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="rightBackWheel">0 0 0 0 -0 0</pose>
+      <!-- Part wheel_4 -->
+      <visual name="wheel_4_visual_mesh_1">
+        <pose relative_to="wheel_4">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.647059 0.647059 0.647059 1</ambient>
+          <diffuse>0.647059 0.647059 0.647059 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="wheel_4_collision_mesh_2">
+        <pose relative_to="wheel_4">0 0 -0.1025 -1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/wheel1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint from body to wheel_4 -->
+    <joint name="rightBackWheel" type="revolute">
+      <pose relative_to="body">-0.207996 -0.25 0.05 -1.5708 -0 0</pose>
+      <parent>body</parent>
+      <child>wheel_4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Link fork -->
+    <link name="fork">
+      <inertial>
+        <pose>0.0 0.0 -0.015 0 0 0</pose>
+        <mass>17.7929</mass>
+        <inertia>
+          <ixx>0.728234</ixx>
+          <ixy>-7.49898e-16</ixy>
+          <ixz>-0.00181882</ixz>
+          <iyy>0.978226</iyy>
+          <iyz>3.57919e-18</iyz>
+          <izz>1.70379</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="lift">0 0 0 0 -0 0</pose>
+      <!-- Part fork -->
+      <visual name="fork_visual_mesh_1">
+        <pose relative_to="fork">-0.015 0.0 0.0 3.14159 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/fork1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.231373 0.380392 0.705882 1</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="fork_collision_mesh_2">
+        <pose relative_to="fork">-0.015 0 0 3.14159 -0 -0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/fork1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Link carriage -->
+    <link name="carriage">
+      <inertial>
+        <pose>-8.35942e-17 0.00139856 0.08 0 0 0</pose>
+        <mass>1.57882</mass>
+        <inertia>
+          <ixx>0.00384031</ixx>
+          <ixy>3.60906e-54</ixy>
+          <ixz>2.66143e-50</ixz>
+          <iyy>0.015562</iyy>
+          <iyz>0.000168789</iyz>
+          <izz>0.0119604</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="forkSlider">0 0 0 0 -0 0</pose>
+      <!-- Part carriage -->
+      <visual name="carriage_visual_mesh_1">
+        <pose relative_to="carriage">-7.40575e-17 0.0152514 0 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/carriage1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.917647 0.917647 0.917647 1</ambient>
+          <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="carriage_collision_mesh_2">
+        <pose relative_to="carriage">-7.40575e-17 0.0152514 0 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://forklift/assets/carriage1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- Joint from fork to carriage -->
+    <joint name="forkSlider" type="prismatic">
+      <pose relative_to="fork">0.615 1.27389e-18 -0.015 1.5708 -4.93295e-18 -1.5708</pose>
+      <parent>fork</parent>
+      <child>carriage</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-1.1102230246251565e-16</lower>
+          <upper>0.4999999999999999</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- Joint from body to fork -->
+    <joint name="lift" type="prismatic">
+      <pose relative_to="body">0.307004 -2.8844e-16 0.001 3.14159 -0 0</pose>
+      <parent>body</parent>
+      <child>fork</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-1.75</lower>
+          <upper>0.0</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+  </model>
+</sdf>

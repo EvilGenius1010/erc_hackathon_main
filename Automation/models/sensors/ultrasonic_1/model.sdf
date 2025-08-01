@@ -1,4 +1,4 @@
-<!-- <?xml version='1.0'?>
+ <?xml version='1.0'?>
 <sdf version='1.7'>
     <model name='ultrasonic_1'>
     <sensor name="my_ultrasonic" type="ray">
@@ -25,4 +25,4 @@
   </plugin>
 </sensor>
     </model>
-</sdf> -->
+</sdf>
