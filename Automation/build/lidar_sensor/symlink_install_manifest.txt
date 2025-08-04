@@ -1,0 +1,15 @@
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/package_run_dependencies/lidar_sensor
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/parent_prefix_path/lidar_sensor
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/ament_prefix_path.sh
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/ament_prefix_path.dsv
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/path.sh
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/path.dsv
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.bash
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.sh
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.zsh
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.dsv
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/package.dsv
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/packages/lidar_sensor
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/cmake/lidar_sensorConfig.cmake
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/cmake/lidar_sensorConfig-version.cmake
+/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/package.xml

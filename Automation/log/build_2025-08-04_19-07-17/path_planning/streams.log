@@ -1,0 +1,32 @@
+[0.247s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning': /usr/bin/cmake /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/path_planning -DCMAKE_INSTALL_PREFIX=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/path_planning
+[0.255s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.255s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.256s]   contain a literal, direct call to the project() command.  Add a line of
+[0.256s]   code such as
+[0.256s] 
+[0.256s]     project(ProjectName)
+[0.256s] 
+[0.256s]   near the top of the file, but after cmake_minimum_required().
+[0.256s] 
+[0.256s]   CMake is pretending there is a "project(Project)" command on the first
+[0.256s]   line.
+[0.256s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.256s] [0m
+[0.318s] -- The C compiler identification is GNU 11.4.0
+[0.395s] -- The CXX compiler identification is GNU 11.4.0
+[0.402s] -- Detecting C compiler ABI info
+[0.464s] -- Detecting C compiler ABI info - done
+[0.472s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.472s] -- Detecting C compile features
+[0.472s] -- Detecting C compile features - done
+[0.475s] -- Detecting CXX compiler ABI info
+[0.562s] -- Detecting CXX compiler ABI info - done
+[0.571s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.571s] -- Detecting CXX compile features
+[0.572s] -- Detecting CXX compile features - done
+[0.573s] -- Configuring done
+[0.574s] -- Generating done
+[0.575s] -- Build files have been written to: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning
+[0.578s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning' returned '0': /usr/bin/cmake /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/path_planning -DCMAKE_INSTALL_PREFIX=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/path_planning
+[0.580s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning': /usr/bin/cmake --build /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning -- -j16 -l16
+[0.619s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning' returned '0': /usr/bin/cmake --build /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning -- -j16 -l16

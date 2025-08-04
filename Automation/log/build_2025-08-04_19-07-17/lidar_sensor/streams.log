@@ -1,0 +1,46 @@
+[0.245s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/lidar_sensor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor
+[0.322s] -- The C compiler identification is GNU 11.4.0
+[0.394s] -- The CXX compiler identification is GNU 11.4.0
+[0.404s] -- Detecting C compiler ABI info
+[0.471s] -- Detecting C compiler ABI info - done
+[0.476s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.477s] -- Detecting C compile features
+[0.477s] -- Detecting C compile features - done
+[0.480s] -- Detecting CXX compiler ABI info
+[0.567s] -- Detecting CXX compiler ABI info - done
+[0.574s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.574s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.580s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.729s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.791s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.823s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.896s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.896s] -- Added test 'lint_cmake' to check CMake code style
+[0.897s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.898s] -- Added test 'xmllint' to check XML markup files
+[0.901s] -- Configuring done
+[0.903s] -- Generating done
+[0.904s] -- Build files have been written to: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor
+[0.908s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/lidar_sensor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor
+[0.910s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor -- -j16 -l16
+[0.945s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor -- -j16 -l16
+[0.958s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor
+[0.965s] -- Install configuration: ""
+[0.965s] -- Execute custom install script
+[0.965s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/package_run_dependencies/lidar_sensor
+[0.975s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/parent_prefix_path/lidar_sensor
+[0.985s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/ament_prefix_path.sh
+[0.996s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/ament_prefix_path.dsv
+[1.009s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/path.sh
+[1.029s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/environment/path.dsv
+[1.046s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.bash
+[1.070s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.sh
+[1.094s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.zsh
+[1.113s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/local_setup.dsv
+[1.128s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/package.dsv
+[1.142s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/ament_index/resource_index/packages/lidar_sensor
+[1.163s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/cmake/lidar_sensorConfig.cmake
+[1.180s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/cmake/lidar_sensorConfig-version.cmake
+[1.187s] -- Symlinking: /home/mahe/Desktop/hk/erc_hackathon_main/Automation/install/lidar_sensor/share/lidar_sensor/package.xml
+[1.202s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor
