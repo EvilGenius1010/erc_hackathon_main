@@ -1,1 +1,0 @@
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/ament_cmake_environment_hooks/local_setup.bash

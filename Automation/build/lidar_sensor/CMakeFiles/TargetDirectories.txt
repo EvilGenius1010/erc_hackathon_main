@@ -1,9 +1,0 @@
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/uninstall.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/lidar_sensor_uninstall.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/test.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/edit_cache.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/rebuild_cache.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/list_install_components.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/install.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/install/local.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/lidar_sensor/CMakeFiles/install/strip.dir

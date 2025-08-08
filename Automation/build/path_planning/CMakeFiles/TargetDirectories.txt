@@ -1,2 +1,0 @@
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning/CMakeFiles/edit_cache.dir
-/home/mahe/Desktop/hk/erc_hackathon_main/Automation/build/path_planning/CMakeFiles/rebuild_cache.dir

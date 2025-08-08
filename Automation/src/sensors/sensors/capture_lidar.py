@@ -7,7 +7,7 @@ class LidarListener(Node):
         super().__init__('lidar_listener')
         self.subscription = self.create_subscription(
             LaserScan,
-            '/lidar/scan',      # Change this if your topic name is different
+            '/lidar_output',      # Change this if your topic name is different
             self.scan_callback,
             10)
 
