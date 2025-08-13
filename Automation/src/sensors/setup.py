@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'capture_lidar = sensors.capture_lidar:main'
+            'capture_camera = sensors.capture_camera:main'
         ],
     },
 )

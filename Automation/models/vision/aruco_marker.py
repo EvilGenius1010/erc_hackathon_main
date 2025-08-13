@@ -11,7 +11,7 @@ parameters = aruco.DetectorParameters()
 detector = aruco.ArucoDetector(aruco_dict, parameters)
 
 # Open default webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture()
 
 while True:
     ret, frame = cap.read()
@@ -37,3 +37,5 @@ while True:
 # Release resources
 cap.release()
 cv2.destroyAllWindows()
+
+# cv2.imread(path)
