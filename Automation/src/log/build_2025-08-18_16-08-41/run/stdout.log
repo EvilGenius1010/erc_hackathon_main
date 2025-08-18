@@ -1,0 +1,29 @@
+running egg_info
+creating ../build/run/run.egg-info
+writing ../build/run/run.egg-info/PKG-INFO
+writing dependency_links to ../build/run/run.egg-info/dependency_links.txt
+writing entry points to ../build/run/run.egg-info/entry_points.txt
+writing requirements to ../build/run/run.egg-info/requires.txt
+writing top-level names to ../build/run/run.egg-info/top_level.txt
+writing manifest file '../build/run/run.egg-info/SOURCES.txt'
+reading manifest file '../build/run/run.egg-info/SOURCES.txt'
+writing manifest file '../build/run/run.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build
+creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib
+creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run
+copying run/__init__.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run
+running install
+running install_lib
+creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run
+copying /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run/__init__.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run
+byte-compiling /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying package.xml -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run
+creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run/launch
+copying launch/warehouselaunch.launch.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run/launch
+running install_egg_info
+Copying ../build/run/run.egg-info to /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/install.log'

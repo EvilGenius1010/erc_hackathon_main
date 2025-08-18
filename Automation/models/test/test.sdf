@@ -5,7 +5,7 @@
           <pose>0 0 0 0 0 0</pose>
       <link name="link1">
       <sensor name='gpu_lidar' type='gpu_lidar'>"
-        <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
+        <pose>10 10 0 0 0 0</pose>
         <topic>lidar</topic>
         <update_rate>10</update_rate>
         <ray>

@@ -1,0 +1,31 @@
+[0.358s] Invoking command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/run': PYTHONPATH=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/run build --build-base /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build install --record /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/install.log --single-version-externally-managed install_data
+[0.495s] running egg_info
+[0.495s] creating ../build/run/run.egg-info
+[0.496s] writing ../build/run/run.egg-info/PKG-INFO
+[0.496s] writing dependency_links to ../build/run/run.egg-info/dependency_links.txt
+[0.496s] writing entry points to ../build/run/run.egg-info/entry_points.txt
+[0.496s] writing requirements to ../build/run/run.egg-info/requires.txt
+[0.496s] writing top-level names to ../build/run/run.egg-info/top_level.txt
+[0.496s] writing manifest file '../build/run/run.egg-info/SOURCES.txt'
+[0.497s] reading manifest file '../build/run/run.egg-info/SOURCES.txt'
+[0.497s] writing manifest file '../build/run/run.egg-info/SOURCES.txt'
+[0.497s] running build
+[0.497s] running build_py
+[0.497s] creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build
+[0.497s] creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib
+[0.497s] creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run
+[0.497s] copying run/__init__.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run
+[0.497s] running install
+[0.498s] running install_lib
+[0.499s] creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run
+[0.499s] copying /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build/lib/run/__init__.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run
+[0.499s] byte-compiling /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run/__init__.py to __init__.cpython-310.pyc
+[0.499s] running install_data
+[0.499s] copying package.xml -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run
+[0.499s] creating /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run/launch
+[0.499s] copying launch/warehouselaunch.launch.py -> /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/share/run/launch
+[0.499s] running install_egg_info
+[0.500s] Copying ../build/run/run.egg-info to /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages/run-0.0.0-py3.10.egg-info
+[0.500s] running install_scripts
+[0.513s] writing list of installed files to '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/install.log'
+[0.528s] Invoked command in '/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/run' returned '0': PYTHONPATH=/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/install/run/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/run build --build-base /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/build install --record /home/mahe/Desktop/hk/erc_hackathon_main/Automation/src/build/run/install.log --single-version-externally-managed install_data

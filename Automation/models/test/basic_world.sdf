@@ -1,0 +1,48 @@
+<sdf version="1.7">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Box obstacle 1 -->
+    <model name="box1">
+      <static>true</static>
+      <pose>1.0 0 0.25 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.5 0.5 0.5</size></box>
+          </geometry>
+          <material><ambient>1 0 0 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box><size>0.5 0.5 0.5</size></box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Box obstacle 2 -->
+    <model name="box2">
+      <static>true</static>
+      <pose>-1.0 1.0 0.25 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.4 0.4 0.4</size></box>
+          </geometry>
+          <material><ambient>0 1 0 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <box><size>0.4 0.4 0.4</size></box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+  </world>
+</sdf>
